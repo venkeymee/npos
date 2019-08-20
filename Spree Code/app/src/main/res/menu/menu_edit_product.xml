@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit"
+        android:orderInCategory="100"
+        android:title="PROFILE"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_print"
+        android:icon="@drawable/ic_print"
+        android:orderInCategory="100"
+        android:title="Print"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_remove"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="100"
+        android:title="REMOVE PRODUCT"
+        app:showAsAction="always" />
+
+</menu>

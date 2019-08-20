@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activities.Inventory.AddProductActivity">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swifeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#f7f7f7"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/txt_gtin_title"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="Create Expense"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey_300"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="5dp"
+                    android:text="Whats the Expense Name"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_expense_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter Expense Name"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Whats the Expense value"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_expense_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter Expense Value"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Whats the Expense Date"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_expense_date"
+                        android:layout_width="302dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:focusable="false"
+                        android:hint="Enter Expense Date"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Expense For"
+                    android:textColor="@color/colorAccentLight"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spn_expense_for"
+                        android:background="@drawable/card_bg_edit_text_cube"
+                        android:layout_height="match_parent"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Expense Category"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spn_expense_cat"
+                        android:background="@drawable/card_bg_edit_text_cube"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_category"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="45dp"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="ADD CATEGORY"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_accent" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="45dp"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="ADD EXPENSE"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_accent" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:text="Cant see expense type. Click on add Category "
+                android:textColor="@color/grey_700"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

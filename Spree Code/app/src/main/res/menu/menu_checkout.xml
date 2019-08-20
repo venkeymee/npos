@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_customer"
+        android:icon="@drawable/ic_nav_profile"
+        android:orderInCategory="100"
+        android:title="CUSTOMER"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_staff"
+        android:icon="@drawable/ic_staff"
+        android:orderInCategory="100"
+        android:title="STAFF"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_discount"
+        android:icon="@drawable/ic_discount"
+        android:orderInCategory="100"
+        android:title="STAFF"
+        app:showAsAction="always" />
+
+</menu>

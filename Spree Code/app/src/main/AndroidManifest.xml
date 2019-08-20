@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bytecodecomp.npos"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="android.permission.SERIAL_PORT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ru.a402d.rawbtprinter.PERMISSION" />
+
+    <application
+        android:name="com.bytecodecomp.npos.Utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <service
+            android:name="com.bytecodecomp.npos.Plugins.notification.MyNotificationExtenderService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.zcs.sdk.pin.pinpad.PinPadPasswordActivity"
+            android:theme="@style/Theme.WindowActivity">
+        </activity>
+        <activity android:name="com.bytecodecomp.npos.Activities.User.LandingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bytecodecomp.npos.Activities.User.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bytecodecomp.npos.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bytecodecomp.npos.Activities.User.SplashActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bytecodecomp.npos.Activities.Sales.CheckoutActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bytecodecomp.npos.Activities.Inventory.AddProductActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bytecodecomp.npos.Activities.Inventory.ProductDetailsActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.SignUpActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.ResetPasswordActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Customers.CustomerActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Customers.AddCustomerActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Supplier.SupplierActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Supplier.AddSupplierActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.DashboardActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.StaffActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.AddStaffActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Inventory.InventoryActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Purchase.PurchaseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Sales.SalesActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Purchase.AddPurchaseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Inventory.EditProductActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Assets.AssetsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Assets.AddAssetsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.AddExpensesActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.ExpenseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Inventory.EditProductListActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Assets.EditAssetsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Customers.EditCustomersActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.EditExpenseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Purchase.EditPurchaseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.EditStaffActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Assets.ViewAssetsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Customers.ViewCustomerActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.ViewExpenseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Purchase.ViewPurchaseActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Sales.ViewSalesActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.ViewStaffActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Supplier.ViewSupplierActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.ExpenseTypeActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Expenses.ViewExpenseTypeActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.ProfileActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.StoreActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.ChangePasswordActivity" />
+        <activity android:name="com.bytecodecomp.npos.Plugins.Printer.MainActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.ChangeEmailActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.AccountSettingsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.SetStaffPassword" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Staff.StaffPermissionsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.User.PackageActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Packages.ListPackagesActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Packages.ViewPackageActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Packages.EditPackageActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Business.ListBusinessActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Subscriptions.ListSubscriptionsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Business.BusinessDetailsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Packages.AddPackageActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.AdminActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Business.CreateStoreActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Admin.Packages.PackagePaymentActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Tablet.CheckoutPageActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Devices.DevicesActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Devices.CreateDeviceActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Devices.ViewDeviceActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Devices.EditDeviceActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Reports.ReportsActivity" />
+        <activity android:name="com.bytecodecomp.npos.Activities.Notification.NotificationActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4eff2b45bbda75b2e4eb782fff39dd682be5d01c" />
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_middle"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:tint="@color/grey_50"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_flash_on" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_middle"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:tint="@color/grey_50"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_focus_on" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_middle"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:tint="@color/grey_50"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_switch_cam" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Align the barcode the center to scan"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_400" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<com.google.android.gms.ads.AdView-->
+                <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/adView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--ads:adSize="BANNER"-->
+                <!--ads:adUnitId="@string/banner_home_footer">-->
+            <!--</com.google.android.gms.ads.AdView>-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+<!--bottom sheet container-->
+<include layout="@layout/sheet_inventory_list" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_set_perms"
+        android:icon="@drawable/ic_set_password"
+        android:orderInCategory="100"
+        android:title="PROFILE"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit"
+        android:orderInCategory="100"
+        android:title="PROFILE"
+        app:showAsAction="always" />
+
+</menu>

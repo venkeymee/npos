@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activities.Staff.StaffPermissionsActivity">
+
+        <include layout="@layout/include_toolbar"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:id="@+id/lyt_permissions"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Authentication Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff Login"
+                    android:textColor="@color/grey_500"
+                    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to change password"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_change_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to change email"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+
+                <CheckBox
+                    android:id="@+id/ch_user_change_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to change profile image"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Reports Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_reports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access store reports"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access dashboard"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Inventory Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_inventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access store inventory"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_add_new_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create new products"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_import_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to import new product"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_export_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to export store products"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_edit_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to edit products"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_print_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to print product labels"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_restock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to restock products"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Purchases Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_purchases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access stores purchases"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_create_purchases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create new purchases"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Sales Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access sales"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_view_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to view sales"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_make_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to make sales"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access cart"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_cash_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to make cash checkouts"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_paypal_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to make PayPal checkout"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_credit_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to make credit checkout"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_bank_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to make bank checkout"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Customers Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_customers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access customers"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_view_customers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to view customers"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_create_customers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create new customers"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_edit_customers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to edit customers"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Staff Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_staff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access other staffs"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_view_staff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to view other staffs"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_create_staff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create other staff"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_set_staff_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to change other password"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Assets Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access assets"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_view_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to view assets"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+
+                <CheckBox
+                    android:id="@+id/ch_user_create_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create assets"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_edit_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to edit assets"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Expense Type Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_exp_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access expense type"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_view_exp_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to view expense type"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_add_exp_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to add expense type"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Manage Expense Permissions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccentLight"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_user_access_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to access expense"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_user_create_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Allow Staff to create expense"
+    android:textColor="@color/grey_500"
+    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="55dp"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="Save"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_accent" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

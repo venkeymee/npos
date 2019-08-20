@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/lyt_product"
+        android:gravity="center_vertical"
+        android:layout_height="45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_Product_count"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/grey_600"
+            android:text="#"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:id="@+id/txt_Product_Name"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/grey_700"
+            android:text="Name"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/txt_Product_sku"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/grey_700"
+            android:text="SKU"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1.3"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/txt_Product_Price"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/grey_700"
+            android:text="Price"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1.3"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/txt_Product_Unit"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/grey_700"
+            android:text="Price"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@color/grey_500"
+        android:layout_height="1.5dp"/>
+
+    </LinearLayout>
+
+

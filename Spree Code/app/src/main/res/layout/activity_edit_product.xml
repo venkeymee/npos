@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activities.Inventory.ProductDetailsActivity">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#f7f7f7"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/txt_gtin_title"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Product Edit"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey_300"
+        android:layout_height="1dp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="product Name"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:textColor="@color/grey_600"
+                        android:maxLines="1"
+                        android:text="product Name"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Product Price"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/grey_600"
+                        android:text="Product Price"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Product Buying Price"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_buying_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textColor="@color/grey_600"
+                        android:text="Product Buying Price"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="product SKU"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_gtin"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:maxLines="1"
+                        android:textColor="@color/grey_600"
+                        android:text="product SKU"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Total Items"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/grey_600"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:maxLines="1"
+                        android:text="Items"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:text="Product Vat percentage value (Leave blank if not vatable)"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_product_vat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter Product vat value"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_remove"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="55dp"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="Delete"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_red" />
+
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="Update"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_green" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

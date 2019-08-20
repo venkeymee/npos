@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "587587306440",
+    "firebase_url": "https://npos-1034f.firebaseio.com",
+    "project_id": "npos-1034f",
+    "storage_bucket": "npos-1034f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587587306440:android:5f93186626456261",
+        "android_client_info": {
+          "package_name": "com.pos.spree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587587306440-h367alqrmh1o5mir3qd115knhg3bahdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdYV_BKdZxn56fGtCjSC1RyBjGX_VNJAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587587306440-h367alqrmh1o5mir3qd115knhg3bahdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

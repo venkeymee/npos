@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activities.Inventory.AddProductActivity">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#f7f7f7"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_gtin_title"
+                    android:gravity="center"
+                    android:text="Edit Customer"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey_300"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Whats the customers Name"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter customers Name"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Whats the customers email"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/colorAccentLight"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_customer_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter customers email"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Whats the customers credit limit"
+                    android:textColor="@color/colorAccentLight"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_customer_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter customers credit limit"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Customers phone Number"
+                    android:textColor="@color/colorAccentLight"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/card_bg_edit_text_cube"
+                    android:layout_height="45dp">
+
+                    <EditText
+                        android:id="@+id/et_customer_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:hint="Enter customers phone number"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="55dp"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:elevation="7dp"
+                    android:layout_gravity="center"
+                    android:text="Edit Customer"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_rounded_accent" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

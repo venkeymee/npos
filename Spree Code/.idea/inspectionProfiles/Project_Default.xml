@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintAccidentalOctal" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintAppCompatCustomView" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintBottomAppBar" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintDuplicateActivity" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintExpiredTargetSdkVersion" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintExpiringTargetSdkVersion" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintExtraTranslation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintGetContentDescriptionOverride" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintImpliedQuantity" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintMergeMarker" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintMissingQuantity" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintMissingTranslation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNewApi" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintOutdatedLibrary" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintStringEscaping" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintStringFormatInvalid" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintStringFormatMatches" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

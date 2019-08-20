@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:tint="@color/grey_500"
+                android:src="@drawable/ic_product_cart"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.3"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:singleLine="true"
+                        android:id="@+id/txt_Product_Name"
+                        android:textColor="@color/grey_700"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:text="Product Name"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:fontFamily="sans-serif-light"
+                        android:id="@+id/txt_Product_Price"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text="10"
+                        android:textSize="10sp"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:textSize="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:id="@+id/txt_Product_unit"
+                        android:textColor="@color/grey_600"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text="10"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:id="@+id/btn_add"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_round_add_button"
+                    android:tint="@color/grey_600"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:id="@+id/btn_subtract"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_round_sub_button"
+                    android:tint="@color/grey_900"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="18dp"
+                    android:id="@+id/btn_remove"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_remove"
+                    android:tint="@color/colorAccentDark"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey_300"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="0.5dp"/>
+
+        </LinearLayout>
+
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:active_item_color="@color/white"
+        app:space_background_color="@color/colorPrimary"
+        app:inactive_item_color="@color/black"
+        app:space_item_icon_size="20dp"
+        app:centre_button_color="@color/white"
+        app:space_item_text_size="@dimen/space_item_text_default_size"
+        android:layout_gravity="bottom" />
+
+</android.support.design.widget.CoordinatorLayout>
