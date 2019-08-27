@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bytecodecomp.npos.Utils.ReceiptHTML;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -47,6 +49,11 @@ import com.bytecodecomp.npos.R;
 import com.bytecodecomp.npos.Utils.AppController;
 import com.bytecodecomp.npos.Utils.AppUtils;
 import com.bytecodecomp.npos.Utils.Tools;
+import com.zcs.sdk.DriverManager;
+import com.zcs.sdk.Printer;
+import com.zcs.sdk.print.PrnSpeedTypeEnum;
+import com.zcs.sdk.print.PrnStrFormat;
+import com.zcs.sdk.print.PrnTextFont;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -972,27 +979,15 @@ public class CheckoutActivity extends AppCompatActivity {
 
     //Checks if store if print is enabled
     public void do_receipt_print(String BILL){
+        DriverManager manager = DriverManager.getInstance();
+        Printer printer= manager.getPrinter();
+        printer.setPrintSpeed(PrnSpeedTypeEnum.HIGH_SPEED);
+        PrnStrFormat formsat = new PrnStrFormat();
 
-        if (App_Settings.store_print.equals("YES")){
-
-            Intent intents = new Intent(this, com.bytecodecomp.npos.Plugins.Printer.MainActivity.class);
-            intents.putExtra("action", BILL);
-            App_Settings.current_activity = "CheckoutActivity";
-            onsale = false;
-            startActivity(intents);
-            finish();
-
-        }
-
-        else {
-
-            Intent intents = new Intent(this, MainActivity.class);
-            startActivity(intents);
-            finish();
-
-        }
-
-
+        formsat.setAli(Layout.Alignment.ALIGN_CENTER);
+        formsat.setFont(PrnTextFont.DEFAULT_BOLD);
+        printer.setPrintAppendString(BILL, formsat);
+        printer.setPrintStart();
     }
 
 

@@ -136,19 +136,6 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = MainActivity.this.getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.view,new SaleFragment());
         fragmentTransaction.commit();
-        DriverManager manager = DriverManager.getInstance();
-        Printer printer= manager.getPrinter();
-        printer.setPrintSpeed(PrnSpeedTypeEnum.HIGH_SPEED);
-        PrnStrFormat   formsat = new PrnStrFormat();
-
-        formsat.setAli(Layout.Alignment.ALIGN_CENTER);
-        formsat.setFont(PrnTextFont.DEFAULT_BOLD);
-        printer.setPrintAppendString(ReceiptHTML.receipt, formsat);
-//        printer.setPrintAppendQRCode("Hello Nimble, Nimble the best POS",360, 360, Layout.Alignment.ALIGN_CENTER);
-
-
-
-        printer.setPrintStart();
 
         spaceNavigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             @Override
